@@ -16,6 +16,16 @@
       "django": true
     },
     {
+      "name": "makemigrations",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": [
+        "makemigrations",
+      ],
+      "django": true
+    },
+    {
       "name": "migrate",
       "type": "python",
       "request": "launch",
