@@ -5,15 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-        "name": "runserver",
-        "type": "python",
-        "request": "launch",
-        "program": "${workspaceFolder}/manage.py",
-        "args": [
-            "runserver",
-            "--settings=config.settings.local"
-        ],
-        "django": true
+      "name": "runserver",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": [
+        "runserver",
+        "--settings=config.settings.local"
+      ],
+      "django": true
     },
     {
       "name": "migrate",
@@ -21,10 +21,21 @@
       "request": "launch",
       "program": "${workspaceFolder}/manage.py",
       "args": [
-          "migrate",
-          "--settings=config.settings.local"
+        "migrate",
+        "--settings=config.settings.local"
       ],
       "django": true
-  },
+    },
+    {
+      "name": "createsuperuser",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": [
+        "createsuperuser",
+        "--settings=config.settings.local"
+      ],
+      "django": true
+    },
   ]
 }

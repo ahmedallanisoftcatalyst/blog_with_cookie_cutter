@@ -57,3 +57,12 @@ CELERY_TASK_ALWAYS_EAGER = True
 CELERY_TASK_EAGER_PROPAGATES = True
 # Your stuff...
 # ------------------------------------------------------------------------------
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': env.str("HOST", default="localhost"),
+        'NAME': env.str("NAME", default="mydb"),
+        'USER': env.str("USER", default="user1"),
+        'PASSWORD': env.str("PASSWORD", default="1234.abcd")
+    }
+}
